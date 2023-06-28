@@ -1,0 +1,13 @@
+**/__pycache__/
+
+**/.idea
+
+Prediction_Logs
+Prediction_Database
+Prediction_Output_File
+Prediction_FileFromDB
+
+Training_Database
+Training_FileFromDB
+Training_Raw_files_validated
+Training_Logs
