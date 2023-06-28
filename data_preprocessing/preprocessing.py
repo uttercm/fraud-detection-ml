@@ -3,6 +3,8 @@ import numpy as np
 from sklearn_pandas import CategoricalImputer
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import RandomOverSampler
+from sklearn import *
+
 class Preprocessor:
     """
         This class shall  be used to clean and transform the data before training.

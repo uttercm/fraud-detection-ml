@@ -5,7 +5,7 @@ from data_preprocessing import preprocessing
 from data_ingestion import data_loader_prediction
 from application_logging import logger
 from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation
-
+from sklearn.utils._openmp_helpers import _openmp_effective_n_threads
 
 class prediction:
 
@@ -49,6 +49,7 @@ class prediction:
             kmeans=file_loader.load_model('KMeans')
 
             ##Code changed
+            kmeans._n_threads = 8
 
             clusters=kmeans.predict(data)
             data['clusters']=clusters
